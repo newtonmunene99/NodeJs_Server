@@ -1,0 +1,25 @@
+{
+  "name": "tmdb_server",
+  "version": "1.0.0",
+  "description": "Server for tmdb",
+  "engines": {
+    "node": "6.11.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.0",
+    "del": "2.2.0",
+    "express": "^4.14.0",
+    "http": "0.0.0",
+    "method-override": "^2.3.6",
+    "morgan": "^1.7.0",
+    "mysql": "^2.15.0"
+  },
+  "author": "Newton Munene",
+  "license": "MIT"
+}
