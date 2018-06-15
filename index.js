@@ -33,17 +33,17 @@ var con = mysql.createConnection({
 
 newcon.connect(function (err) {
     if (err) {
-        throw err;
+        console.log(err);
     } else {
         console.log("Connected");
         newcon.query("CREATE DATABASE IF NOT EXISTS tmdb", function (err, result) {
             if (err) {
-                throw err;
+                console.log(err);
             } else {
                 console.log("Database Created Successfully");
                 con.connect(function (err) {
                     if (err) {
-                        throw err;
+                        console.log(err);
                     } else {
                         console.log("Database Connected Successfully");
                         var sql = [
@@ -55,7 +55,7 @@ newcon.connect(function (err) {
                         for (var i = 0; i <= 2; i++) {
                             con.query(sql[i], function (err, result) {
                                 if (err) {
-                                    throw err;
+                                    console.log(err);
                                 } else {
                                     console.log("TABLE CREATED SUCCESSFULLY");
                                 }
@@ -306,4 +306,4 @@ app.post('*', function (req, res) {
 });
 
 /* APP PORT CONFIGURATION */
-app.listen(process.env.PORT || 8050);
+app.listen(process.env.PORT || 8080);
