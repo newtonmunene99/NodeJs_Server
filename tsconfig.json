@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "outDir": "lib",
+        "sourceMap": true,
+        "declaration": true
+    },
+    "files": [
+        "./node_modules/@types/mocha/index.d.ts",
+        "./node_modules/@types/node/index.d.ts",
+        "./node_modules/@types/body-parser/index.d.ts",
+        "./node_modules/@types/express/index.d.ts",
+        "./node_modules/@types/morgan/index.d.ts",
+        "./node_modules/@types/body-parser/index.d.ts",
+        "./node_modules/@types/cors/index.d.ts",
+        "./node_modules/@types/mysql/index.d.ts",
+        "./node_modules/@types/bcryptjs/index.d.ts",
+        "./node_modules/@types/method-override/index.d.ts"
+    ],
+    "include": ["./src/**/*"],
+    "exclude": ["node_modules", "src/**/*.spec.ts", "src/**/__tests__/*.ts"]
+}

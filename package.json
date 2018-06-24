@@ -1,25 +1,65 @@
 {
-  "name": "tmdb_server",
-  "version": "1.0.0",
-  "description": "Server for tmdb",
-  "engines": {
-    "node": "6.11.1"
-  },
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
-  "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "body-parser": "^1.15.2",
-    "cors": "^2.8.0",
-    "del": "2.2.0",
-    "express": "^4.14.0",
-    "http": "0.0.0",
-    "method-override": "^2.3.6",
-    "morgan": "^1.7.0",
-    "mysql": "^2.15.0"
-  },
-  "author": "Newton Munene",
-  "license": "MIT"
+    "name": "tmdb_server",
+    "version": "1.0.0",
+    "description": "Server for tmdb",
+    "homepage": "https://github.com/newtonmunene99/NodeJs_Server",
+    "engines": {
+        "node": "6.11.1"
+    },
+    "main": "lib/index",
+    "types": "lib/index",
+    "scripts": {
+        "start": "npm run build && node lib/index.js",
+        "build": "tsc",
+        "dev": "nodemon --exec ./node_modules/.bin/ts-node -- ./src/index.ts"
+    },
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.15.2",
+        "cors": "^2.8.0",
+        "del": "2.2.0",
+        "express": "^4.14.0",
+        "http": "0.0.0",
+        "method-override": "^2.3.6",
+        "morgan": "^1.7.0",
+        "mysql": "^2.15.0"
+    },
+    "devDependencies": {
+        "@types/bcryptjs": "^2.4.1",
+        "@types/body-parser": "^1.17.0",
+        "@types/cors": "^2.8.4",
+        "@types/express": "^4.16.0",
+        "@types/method-override": "0.0.31",
+        "@types/mocha": "^5.2.3",
+        "@types/morgan": "^1.7.35",
+        "@types/mysql": "^2.15.5",
+        "@types/node": "^10.3.5",
+        "eslint": "^5.0.0",
+        "eslint-config-google": "^0.9.1",
+        "mocha": "^5.2.0",
+        "nodemon": "^1.17.5",
+        "ts-node": "^7.0.0",
+        "typescript": "^2.9.2",
+        "typescript-eslint-parser": "^16.0.0"
+    },
+    "keywords": [
+        "nodejs",
+        "node",
+        "expressjs",
+        "server"
+    ],
+    "author": {
+        "name": "Newton Munene",
+        "email": "newtonmunene99@gmail.com",
+        "url": "https://github.com/newtonmunene99"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/newtonmunene99/NodeJs_Server.git"
+    },
+    "bugs": {
+        "email": "newtonmunene99@gmail.com",
+        "url": "https://github.com/newtonmunene99/NodeJs_Server/issues"
+    }
 }
